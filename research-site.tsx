@@ -26,30 +26,7 @@ const publications = [
 
 function Orb() { const ref = useRef<THREE.Mesh>(null); useFrame((_, delta) => { if (ref.current) { ref.current.rotation.x += delta * .15; ref.current.rotation.y += delta * .2; } }); return <Float speed={1.8} rotationIntensity={.65} floatIntensity={1.3}><mesh ref={ref}><icosahedronGeometry args={[1.35, 3]} /><meshStandardMaterial color="#8dfcf3" wireframe emissive="#1d9d99" emissiveIntensity={1.5} /></mesh></Float>; }
 function AmbientCanvas() { return <div className="orb-canvas" aria-hidden="true"><Canvas camera={{ position: [0, 0, 4.7], fov: 48 }} dpr={[1, 1.5]}><ambientLight intensity={.45} /><pointLight position={[3, 2, 4]} color="#9d81ff" intensity={13} /><pointLight position={[-4, -2, 2]} color="#69fff1" intensity={8} /><Orb /><Sparkles count={90} scale={7} size={1.5} speed={.25} color="#d9ffff" /></Canvas></div> }
-function Reveal({ children, className = '' }: { children: React.ReactNode, className?: string }) { return <motion.div
-  initial={{ opacity: 0, y: 16 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: .45 }}
-  className="hero-actions"
->
-  <MagneticButton href="#research">
-    Explore research
-  </MagneticButton>
 
-  <a
-    href="/CV_Muhammed_Yousuf_S.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="button button-dark"
-  >
-    Download CV
-    <ArrowUpRight size={16} />
-  </a>
-
-  <MagneticButton href="#contact" dark>
-    Start a conversation
-  </MagneticButton>
-</motion.div>}
 function SectionHeading({ eyebrow, title, copy }: { eyebrow: string, title: React.ReactNode, copy?: string }) { return <Reveal className="section-heading"><div className="eyebrow"><span />{eyebrow}</div><h2>{title}</h2>{copy && <p>{copy}</p>}</Reveal> }
 function MagneticButton({
   children,
@@ -120,12 +97,15 @@ export default function ResearchSite() {
     Explore research
   </MagneticButton>
 
-  <MagneticButton
+  <a
     href="/CV_Muhammed_Yousuf_S.pdf"
-    dark
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button button-dark"
   >
     Download CV
-  </MagneticButton>
+    <ArrowUpRight size={16} />
+  </a>
 
   <MagneticButton href="#contact" dark>
     Start a conversation
