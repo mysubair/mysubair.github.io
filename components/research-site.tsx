@@ -187,7 +187,13 @@ yousufmuhammedkpm@gmail.com</a><a
   rel="noopener noreferrer"
 >
   <Linkedin />LinkedIn
-</a><a href="#top"><Github/>GitHub</a></div></Reveal><Reveal><form action="https://formspree.io/f/mqpzebwq" method="POST">
+</a><a
+  href="https://orcid.org/0009-0007-2452-0181?lang=en"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  ORCID
+</a></div></Reveal><Reveal><form action="https://formspree.io/f/mqpzebwq" method="POST">
   <label>
     Your name
     <input
