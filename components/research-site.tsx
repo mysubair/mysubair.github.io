@@ -187,14 +187,16 @@ yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><
       <span>{p.tags.join(' · ')}</span>
     </motion.div>
   )}
-</AnimatePresence></div><a
+</AnimatePresence></div>
+      <a
   href={p.url}
   target="_blank"
   rel="noopener noreferrer"
-  aria-label={`Open ${p.journal}`}
+  className="pub-read"
+  aria-label={`Read ${p.title}`}
   onClick={(e) => e.stopPropagation()}
 >
-  <ArrowUpRight size={22} />
+  Read paper <ArrowUpRight size={18} />
 </a>
     </article></Reveal>)}</div></section>
     
