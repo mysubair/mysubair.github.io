@@ -175,6 +175,7 @@ yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><
   >
     {p.journal}
   </a>
+    </p>
 <AnimatePresence>
   {expanded === i && (
     <motion.div
@@ -194,7 +195,9 @@ yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><
   onClick={(e) => e.stopPropagation()}
 >
   <ArrowUpRight size={22} />
-</a></article></Reveal>)}</div></section>
+</a>
+  </p>
+    </article></Reveal>)}</div></section>
     
     
     <section className="credentials section"><div className="credential"><span>06 — Experience</span><h3>Translating atmospheric measurements into knowledge that moves research and policy forward.</h3><p>IIT Delhi · Environmental Engineering · 2022 — Present</p></div><div className="credential"><span>07 — Recognition</span><h3>Building a research record shaped by care, curiosity and collaboration.</h3><p>Awards & Fellowships · Conferences · Academic service</p></div></section>
