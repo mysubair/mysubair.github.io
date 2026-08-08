@@ -24,13 +24,12 @@
 }
 
 .hero-photo img {
-  width: min(420px, 100%);
-  height: 420px;
+  width: min(380px, 85%);
+  height: 380px;
   object-fit: cover;
   object-position: center;
   border-radius: 28px;
   display: block;
-  image-rendering: auto;
 }
 
 @media (max-width: 800px) {
