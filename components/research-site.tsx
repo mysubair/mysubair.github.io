@@ -85,7 +85,85 @@ export default function ResearchSite() {
 </span></button><a className="nav-contact" href="mailto:	
 yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><button className="menu" onClick={() => setMenu(!menu)} aria-label="Open menu">{menu ? <X/> : <Menu/>}</button></nav>
     <AnimatePresence>{menu && <motion.div className="mobile-menu" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>{['About','Research','Work','Contact'].map(x => <a onClick={() => setMenu(false)} key={x} href={`#${x.toLowerCase()}`}>{x}</a>)}</motion.div>}</AnimatePresence>
-    <section className="hero" id="top"><div className="hero-copy"><motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="availability"><span />Currently researching at IIT Delhi</motion.div><motion.h1 initial={{ opacity: 0, y: 36 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .12, duration: .8 }}>Muhammed<br/><em>Yousuf Subair</em></motion.h1><motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .35 }}>PhD Research Scholar exploring the invisible architecture of our atmosphere — from aerosols to the futures they shape.</motion.p><motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .45 }} className="hero-actions"><MagneticButton href="#research">Explore research</MagneticButton><MagneticButton href="/CV_Muhammed_Yousuf_S.pdf" dark target="_blank">Download CV</MagneticButton><MagneticButton href="#contact" dark>Start a conversation</MagneticButton></motion.div></div><div className="hero-meta"><span>Environmental Engineering<br/>& Atmospheric Science</span><span>28.5455° N<br/>77.1926° E</span></div><a className="scroll" href="#about">Scroll to discover <ChevronDown size={15}/></a></section>
+   <section className="hero" id="top">
+  <div className="hero-content">
+    
+    <div className="hero-photo">
+      <img
+        src="/yousuf.jpg"
+        alt="Muhammed Yousuf Subair"
+      />
+    </div>
+
+    <div className="hero-copy">
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="availability"
+      >
+        <span />
+        Currently researching at IIT Delhi
+      </motion.div>
+
+      <motion.h1
+        initial={{ opacity: 0, y: 36 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.12, duration: 0.8 }}
+      >
+        Muhammed<br />
+        <em>Yousuf Subair</em>
+      </motion.h1>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.35 }}
+      >
+        PhD Research Scholar exploring the invisible architecture of our atmosphere — from aerosols to the futures they shape.
+      </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.45 }}
+        className="hero-actions"
+      >
+        <MagneticButton href="#research">
+          Explore research
+        </MagneticButton>
+
+        <MagneticButton
+          href="/CV_Muhammed_Yousuf_S.pdf"
+          dark
+          target="_blank"
+        >
+          Download CV
+        </MagneticButton>
+
+        <MagneticButton href="#contact" dark>
+          Start a conversation
+        </MagneticButton>
+      </motion.div>
+    </div>
+
+  </div>
+
+  <div className="hero-meta">
+    <span>
+      Environmental Engineering<br />
+      & Atmospheric Science
+    </span>
+
+    <span>
+      28.5455° N<br />
+      77.1926° E
+    </span>
+  </div>
+
+  <a className="scroll" href="#about">
+    Scroll to discover <ChevronDown size={15} />
+  </a>
+</section>
     <section id="about" className="about section"><SectionHeading eyebrow="01 — About" title={<>A scientist for the <em>atmosphere.</em></>} copy="Driven by the belief that the air we share deserves to be understood with exceptional clarity."/><div className="about-grid"><Reveal><p className="lead">Muhammed Yousuf is a PhD Research Scholar at the Indian Institute of Technology Delhi, working at the intersection of atmospheric measurement, aerosol chemistry, and environmental health.</p><p>His research makes the complex behaviour of airborne particles legible — connecting rigorous field observations with the decisions that can make cities healthier and more resilient.</p><a className="text-link" href="#contact">More about my approach <ArrowDownRight size={17}/></a></Reveal><Reveal className="philosophy"><span className="quote-mark">“</span><p>Good science begins with attention: to uncertainty, to place, and to the people behind every data point.</p><small>RESEARCH PHILOSOPHY</small></Reveal></div><div className="timeline"><div><small>NOW</small><b>PhD Research Scholar</b><span>IIT Delhi · Environmental Engineering</span></div><div><small>FOCUS</small><b>Atmospheric Observation</b><span>Particles, chemistry & climate</span></div><div><small>METHOD</small><b>Curious & rigorous</b><span>Evidence designed for impact</span></div></div></section>
     <section id="research" className="research section"><SectionHeading eyebrow="02 — Research" title={<>Making the <em>invisible</em> intelligible.</>} copy="A research practice spanning particles, processes, instruments and the public good."/><div className="research-grid">{research.map(([n, title, text, tone], i) => <Reveal key={title} className="research-card-wrap"><motion.article className={`research-card ${tone}`} whileHover={{ y: -10, transition: { duration: .25 } }}><span>{n}</span><Atom size={25}/><h3>{title}</h3><p>{text}</p><ArrowUpRight className="card-arrow" size={19}/></motion.article></Reveal>)}</div></section>
     <section id="work" className="publications section"><SectionHeading eyebrow="03 — Selected output" title={<>Research that travels <em>further.</em></>}/><div className="filters">{['All','Journal','Conference','In review'].map(f => <button onClick={() => setFilter(f)} className={filter === f ? 'active' : ''} key={f}>{f}</button>)}</div><div className="pub-list">{shownPubs.map((p, i) => <Reveal key={p.title}><article className="pub" onClick={() => setExpanded(expanded === i ? null : i)}><div className="pub-year">{p.year}</div><div><div className="pub-type">{p.type}</div><h3>{p.title}</h3><p>
