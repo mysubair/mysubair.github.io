@@ -59,7 +59,7 @@ export default function ResearchSite() {
   const shownPubs = filter === 'All' ? publications : publications.filter(p => p.type === filter);
   function submit(e: FormEvent) { e.preventDefault(); setSent(true); }
   return <main className={`${theme}-theme`}><div className="cursor-glow" ref={glow} /><AmbientCanvas />
-    <nav><a href="#top" className="brand">MY<span>·</span></a><div className="nav-links">{['About','Research','Work','Contact'].map(x => <a key={x} href={`#${x.toLowerCase()}`}>{x}</a>)}</div><div className="nav-actions"><button className="theme-toggle" type="button" role="switch" aria-checked={theme === 'dark'} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><span className="theme-toggle-thumb">
+    <nav><a href="#top" className="brand"></span></a><div className="nav-links">{['About','Research','Work','Contact'].map(x => <a key={x} href={`#${x.toLowerCase()}`}>{x}</a>)}</div><div className="nav-actions"><button className="theme-toggle" type="button" role="switch" aria-checked={theme === 'dark'} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><span className="theme-toggle-thumb">
   {theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />}
 </span></button><a className="nav-contact" href="mailto:	
 yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><button className="menu" onClick={() => setMenu(!menu)} aria-label="Open menu">{menu ? <X/> : <Menu/>}</button></nav>
