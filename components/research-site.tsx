@@ -196,7 +196,6 @@ yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><
 >
   <ArrowUpRight size={22} />
 </a>
-  </p>
     </article></Reveal>)}</div></section>
     
     
