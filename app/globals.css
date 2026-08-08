@@ -37,6 +37,23 @@
     grid-template-columns: 1fr;
     gap: 35px;
     text-align: center;
+    justify-items: center;
+  }
+
+  .hero-copy {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-copy h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-photo {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-photo img {
