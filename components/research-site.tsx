@@ -19,9 +19,30 @@ const research = [
 ];
 
 const publications = [
-  { year: '2025', type: 'In review', title: 'Chemical signatures and sources of urban fine particulate matter in the Indo-Gangetic Plain', journal: 'Atmospheric Environment', tags: ['PM₂.₅', 'Source apportionment'] },
-  { year: '2024', type: 'Conference', title: 'Seasonal dynamics of carbonaceous aerosols over Delhi', journal: 'AAAR Annual Conference', tags: ['Aerosols', 'Black carbon'] },
-  { year: '2023', type: 'Journal', title: 'A multi-season observation of aerosol optical properties at a megacity receptor site', journal: 'Environmental Research', tags: ['Optics', 'Climate'] }
+  {
+    year: '2025',
+    type: 'In review',
+    title: 'Chemical signatures and sources of urban fine particulate matter in the Indo-Gangetic Plain',
+    journal: 'Atmospheric Environment',
+    tags: ['PM₂.₅', 'Source apportionment'],
+    url: 'PASTE_JOURNAL_LINK_HERE'
+  },
+  {
+    year: '2024',
+    type: 'Conference',
+    title: 'Seasonal dynamics of carbonaceous aerosols over Delhi',
+    journal: 'AAAR Annual Conference',
+    tags: ['Aerosols', 'Black carbon'],
+    url: 'PASTE_JOURNAL_LINK_HERE'
+  },
+  {
+    year: '2026',
+    type: 'Journal',
+    title: 'Chemical investigation of polycyclic aromatic hydrocarbon sources and associated health risks in PM2.5 from Eastern India',
+    journal: 'scientific reports',
+    tags: ["Particulate matter","Polycyclic aromatic hydrocarbons","TD-GC/MS","Diagnostic ratios (DRs)","Principal component analysis (PCA)","Health risks evaluation"],
+    url: 'https://www.nature.com/articles/s41598-026-41899-0'
+  }
 ];
 
 function Orb() { const ref = useRef<THREE.Mesh>(null); useFrame((_, delta) => { if (ref.current) { ref.current.rotation.x += delta * .15; ref.current.rotation.y += delta * .2; } }); return <Float speed={1.8} rotationIntensity={.65} floatIntensity={1.3}><mesh ref={ref}><icosahedronGeometry args={[1.35, 3]} /><meshStandardMaterial color="#8dfcf3" wireframe emissive="#1d9d99" emissiveIntensity={1.5} /></mesh></Float>; }
