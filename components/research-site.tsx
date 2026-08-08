@@ -238,7 +238,7 @@ yousufmuhammedkpm@gmail.com</a><a
   </svg>
 </span>
 <span style={{ marginLeft: '8px' }}>LinkedIn</span>
-LinkedIn
+
 </a><a
   href="https://orcid.org/0009-0007-2452-0181?lang=en"
   target="_blank"
