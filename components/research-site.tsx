@@ -42,6 +42,14 @@ const publications = [
     journal: 'scientific reports',
     tags: ["Particulate matter","Polycyclic aromatic hydrocarbons","TD-GC/MS","Diagnostic ratios (DRs)","Principal component analysis (PCA)","Health risks evaluation"],
     url: 'https://www.nature.com/articles/s41598-026-41899-0'
+  },
+  {
+    year: '2025',
+    type: 'Journal',
+    title: 'Spatiotemporal Modelling Approach for Nutrient Export in Sasthamkotta Freshwater Wetland Watershed',
+    journal: 'Journal of the Indian Society of Remote Sensing',
+    tags: ["Nutrient Export","Wetlands","Remote Sensing","GIS","Ramsar Site"," Nutrient Delivery Ratio"],
+    url: "https://doi.org/10.1007/s12524-024-01978-z'
   }
 ];
 
