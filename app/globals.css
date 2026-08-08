@@ -40,6 +40,11 @@
     justify-items: center;
   }
 
+  .hero-photo {
+    width: 100%;
+    justify-content: center;
+  }
+
   .hero-copy {
     width: 100%;
     text-align: center;
@@ -51,9 +56,13 @@
     margin-right: auto;
   }
 
-  .hero-photo {
-    width: 100%;
+  .hero-copy .availability {
     justify-content: center;
+    text-align: center;
+  }
+
+  .hero-copy p {
+    text-align: center;
   }
 
   .hero-photo img {
