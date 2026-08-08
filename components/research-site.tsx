@@ -73,7 +73,13 @@ yousufmuhammedkpm@gmail.com">Let’s connect <MoveUpRight size={14}/></a></div><
     <section className="credentials section"><div className="credential"><span>06 — Experience</span><h3>Translating atmospheric measurements into knowledge that moves research and policy forward.</h3><p>IIT Delhi · Environmental Engineering · 2022 — Present</p></div><div className="credential"><span>07 — Recognition</span><h3>Building a research record shaped by care, curiosity and collaboration.</h3><p>Awards & Fellowships · Conferences · Academic service</p></div></section>
     <section id="contact" className="contact section"><Reveal><div className="eyebrow"><span />08 — Contact</div><h2>Let’s make the air<br/><em>more legible.</em></h2><p>For research collaborations, speaking invitations, and thoughtful conversations.</p><div className="contact-links"><a href="mailto:	
 yousufmuhammedkpm@gmail.com"><Mail/>	
-yousufmuhammedkpm@gmail.com</a><a href="#top"><Linkedin/>LinkedIn</a><a href="#top"><Github/>GitHub</a></div></Reveal><Reveal><form action="https://formspree.io/f/mqpzebwq" method="POST">
+yousufmuhammedkpm@gmail.com</a><a
+  href="https://www.linkedin.com/in/muhammed-yousuf-s-95968721a/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Linkedin />LinkedIn
+</a><a href="#top"><Github/>GitHub</a></div></Reveal><Reveal><form action="https://formspree.io/f/mqpzebwq" method="POST">
   <label>
     Your name
     <input
