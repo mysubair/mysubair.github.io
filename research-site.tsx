@@ -8,7 +8,7 @@ import { FormEvent, useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
 const research = [
-  ['01', 'Aerosols', 'Mapping the particles that shape climate, visibility, and human health.', 'cyan'],
+  ['01', 'Atmospheric Aerosols', 'Mapping the particles that shape climate, visibility, and human health.', 'cyan'],
   ['02', 'Black Carbon', 'Following high-impact carbonaceous aerosols from source to atmosphere.', 'violet'],
   ['03', 'Organic Aerosols', 'Resolving the chemical complexity of atmospheric organic matter.', 'gold'],
   ['04', 'PM₂.₅', 'Turning fine-particle measurements into actionable public insight.', 'pink'],
