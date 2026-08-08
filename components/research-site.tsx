@@ -49,7 +49,7 @@ const publications = [
     title: 'Spatiotemporal Modelling Approach for Nutrient Export in Sasthamkotta Freshwater Wetland Watershed',
     journal: 'Journal of the Indian Society of Remote Sensing',
     tags: ["Nutrient Export","Wetlands","Remote Sensing","GIS","Ramsar Site"," Nutrient Delivery Ratio"],
-    url: "https://doi.org/10.1007/s12524-024-01978-z'
+    url: 'https://doi.org/10.1007/s12524-024-01978-z'
   }
 ];
 
